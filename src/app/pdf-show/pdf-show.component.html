@@ -1,0 +1,37 @@
+<!-- HEADER -->
+<div class="pdf-header">
+    <!-- Left: Title -->
+    <div class="pdf-name">☰ My PDF Viewer</div>
+
+  
+    <!-- Center: Page Controls -->
+    <div>
+      <button (click)="prevPage()">⬅️</button>
+      <span style="margin: 0 10px;">Page {{ page }} / {{ totalPages }}</span>
+      <button (click)="nextPage()">➡️</button>
+    </div>
+  
+    <!-- Right: Icons -->
+    <div class="pdf-right-icons">
+        <i class="fas fa-search icon-btn" title="Search" ></i>
+        <i class="fas fa-download icon-btn" title="Download" (click)="downloadPDF()"></i>
+        <i class="fas fa-print icon-btn" title="Print" (click)="printPDF()"></i>
+        
+    </div>
+  </div>
+  
+  <!-- PDF VIEWER -->
+  <div class="pdf-body">
+    <pdf-viewer 
+      [src]="'assets/file.pdf'"
+      [render-text]="true"
+      [original-size]="false"
+      [show-borders]="false"
+      [show-all]="false"
+      [page]="page"
+      [zoom]="zoom"
+      (after-load-complete)="afterLoadComplete($event)"
+      style="width: 80%; height: 90vh; background-color: #f4f4f4; box-shadow: 0 0 20px rgba(0,0,0,0.3); border-radius: 12px;"
+    ></pdf-viewer>
+  </div>
+  

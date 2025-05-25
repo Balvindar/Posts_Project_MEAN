@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+input[type="file"] {
+    visibility: hidden;
+}
+.full-width {
+    width: 100%;
+}
+
+.image-preview {
+    height: 5rem;
+    margin: 1rem 0;
+}
+
+.image-preview img {
+    height: 50%;
+}
+
+.post-image {
+    width: 50%;
+}
+
+.post-image img {
+    width: 100%;
+    box-shadow: 1px, 1px, 1px 5px, rgb(0, 0, 0, 0.5);
+}
+

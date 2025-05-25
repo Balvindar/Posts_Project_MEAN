@@ -1,0 +1,39 @@
+.pdf-header {
+    background: #585757;
+    padding: 10px 20px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pdf-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.pdf-right-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.pdf-body {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #777575;
+}
+
+
+.icon-btn {
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.icon-btn:hover {
+    color: #00d1ff;
+}
